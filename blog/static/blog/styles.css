@@ -95,3 +95,20 @@ body {
   .account-heading {
     font-size: 2.5rem;
   }
+
+  .border-top {
+    border-top-color: #bfc9ba!important;
+  }
+
+  .form-control {
+    border-radius: 1.100rem;
+    border: 1px solid #b2c4b9d1;
+  }
+  
+  .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgb(129 160 103 / 38%);
+  }
+
+  .requiredField {
+    margin-left: 5px;
+  }

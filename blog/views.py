@@ -1,4 +1,5 @@
 from django.shortcuts import render
+
 from .models import Post
 # Create your views here.
 
@@ -10,9 +11,3 @@ def home(request):
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
-
-def user_login(request):
-    pass
-
-def user_register(request):
-    pass
