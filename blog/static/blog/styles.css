@@ -24,6 +24,7 @@ body {
 
   .site-header .navbar-nav .nav-link {
     color: #d9efd6;
+    font-weight: 500;
     margin-left: 25px;
   }
   
@@ -41,6 +42,7 @@ body {
     border: 1.5px solid #4d5c4eb6;
     border-radius:9px;
     margin-bottom: 20px;
+    margin-top: 20px;
   }
   
   .article-title {
@@ -90,6 +92,8 @@ body {
     width: 125px;
     margin-right: 20px;
     margin-bottom: 16px;
+    margin-top: 10px;
+    border: 2.5px solid #033617d1;
   }
   
   .account-heading {
@@ -111,4 +115,22 @@ body {
 
   .requiredField {
     margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
+  .btn-outline-info {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 42%;
+  }
+
+  .left-st {
+    position: absolute;
+    right: 4%;
+  }
+   .nav-img {
+    width: 40px;
+    height: 40px;
+    margin-right: -25px;
+    border: 2.5px solid #033617d1;
+   }
