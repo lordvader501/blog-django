@@ -1,0 +1,20 @@
+{% extends "blog/layouts.html" %}
+{% block content %} 
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+            <img class="rounded-circle artile-img nav-img" src="{{ object.author.profile.image.url }}">
+            <a class="mr-2 blog-uname" href="#">{{ object.author }}</a>
+            {% if object.author == user %}
+            <div>
+                <a class="btn btn-outline-secondary mt-n8 btn-sm post-btn" href="{% url 'post-update' object.id %}">Update</a>
+                <a class="btn btn-outline-danger mt-n btn-sm post-btn" href="{% url 'post-delete' object.id %}">Delete</a>
+            </div>
+            {% endif %}
+            <p class="text-muted">{{ object.date_posted|date:"N d, Y" }}</p>
+        </div>
+        <h2 class="article-title">{{ object.title }}</h2>
+        <p class="article-content">{{ object.contents }}</p>
+        </div>
+    </article>
+{% endblock content %}

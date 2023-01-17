@@ -3,11 +3,12 @@
 {% for post in posts %}
     <article class="media content-section">
         <div class="media-body">
-        <div class="article-metadata">
-            <a class="mr-2" href="#">@{{ post.author }}</a>
+            <div class="article-metadata">
+            <img class="rounded-circle artile-img nav-img" src="{{ post.author.profile.image.url }}">
+            <a class="mr-2 blog-uname" href="#">{{ post.author }}</a>
             <p class="text-muted">{{ post.date_posted|date:"N d, Y" }}</p>
         </div>
-        <h2><a class="article-title" href="#">{{ post.title }}</a></h2>
+        <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
         <p class="article-content">{{ post.contents }}</p>
         </div>
     </article>
