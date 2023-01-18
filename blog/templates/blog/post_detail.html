@@ -4,7 +4,7 @@
         <div class="media-body">
             <div class="article-metadata">
             <img class="rounded-circle artile-img nav-img" src="{{ object.author.profile.image.url }}">
-            <a class="mr-2 blog-uname" href="#">{{ object.author }}</a>
+            <a class="mr-2 blog-uname" href="{% url 'user-post' object.author.username %}">{{ object.author }}</a>
             {% if object.author == user %}
             <div>
                 <a class="btn btn-outline-secondary mt-n8 btn-sm post-btn" href="{% url 'post-update' object.id %}">Update</a>

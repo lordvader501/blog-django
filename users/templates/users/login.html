@@ -9,7 +9,10 @@
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Sign In</button>
+                <button class="btn btn-outline-info post-up" type="submit">Sign In</button>
+                <small>
+                    <a href="{% url 'password_reset' %}" class="password-lg">Forgot Password?</a>
+                </small>
             </div>
         </form>
         <div class="border-top border-2 pt-0 mt-2">
